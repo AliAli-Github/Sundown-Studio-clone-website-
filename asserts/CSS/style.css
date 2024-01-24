@@ -1,0 +1,79 @@
+@font-face {
+    font-family: font-one;
+    src: url(../fonts/font-one.woff);
+}
+
+@font-face {
+    font-family: font-two;
+    src: url(../fonts/font-two.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font-one;
+}
+
+.first-page {
+    width: 100%;
+    height: auto;
+    background-color: #EFEAE3;
+    min-height: 100vh;
+}
+
+nav {
+    padding: 32px 32px 0px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 176px;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    gap: 0.5em;
+}
+
+.navbar li {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid rgba(11, 5, 0, .2);
+    padding: 13px 26px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.navbar li::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0B0500;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.navbar li:hover::after {
+    border-radius: 0px;
+    bottom: 0%;
+}
+
+.navbar li a {
+    font-family: font-two;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0b0500;
+    z-index: 9;
+    position: relative;
+}
+
+.navbar li:hover a {
+    color: white;
+}

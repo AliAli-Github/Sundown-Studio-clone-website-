@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website fav icon -->
+    <link rel="shotcut icon" href="asserts/images/favicon.png" type="image/x-icon">
     <title>Sundown Studio</title>
+    <!-- locomotive css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- main css file -->
     <link rel="stylesheet" href="asserts/CSS/style.css">
 </head>
 
@@ -16,8 +21,8 @@
             <!------------ Navbar ------------->
 
             <nav>
-                <div class="logo-div" style="margin-right: 10px;">
-                    <img src="asserts/images/logo.svg" alt="logo" class="logo">
+                <div class="logo-div logo" style="margin-right: 10px;">
+                    <img src="asserts/images/logo.svg" alt="logo">
                 </div>
                 <ul class="navbar">
                     <li><a href="#">Work</a></li>
@@ -47,34 +52,49 @@
                 </div>
                 <div class="big">
                     <h1>SPACES <br>
-                        THAT <br>
+                        THAT&nbsp;<br>
                         INSPIRE</h1>
                 </div>
             </div>
 
             <!---------- main content --------->
 
-            <!-- animation -->
+            <!---------- animation ------------->
 
             <div class="anime-parent">
                 <div class="anime-child-1"></div>
                 <div class="anime-child-2"></div>
             </div>
 
-            <!-- animation -->
+            <!---------- animation ------------->
 
             <!---------- Vedio --------------->
 
             <div class="video-div" style="position: relative;">
-                <video style="position: absolute;" class="first-video" autoplay loop muted
+                <video class="first-video" autoplay loop muted
                     src="https://player.vimeo.com/progressive_redirect/playback/822063732/rendition/1080p/file.mp4?loc=external&signature=79851f90dc501a79b69488c261bfb3c1db78d45a4eba6d058173e6f9576f6186"></video>
             </div>
 
             <!---------- Vedio --------------->
 
         </section>
+
+        <section class="second-page">
+            <div class="moving-text-div">
+                <h1>ENVIRONMENTS</h1>
+                <div class="moving-text-circle"></div>
+                <h1>EXPERIENCES</h1>
+                <div class="moving-text-circle"></div>
+                <h1>CONTENT</h1>
+                <div class="moving-text-circle"></div>
+            </div>
+        </section>
+
     </div>
 
+    <!-- locomotive js cdn -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <!-- main script file -->
     <script src="asserts/JS/script.js"></script>
 </body>
 

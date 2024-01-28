@@ -35,12 +35,15 @@ nav {
 
 nav img {
     cursor: pointer;
-    transition: 0.4s ease;
     width: 176px;
     height: 80px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.logo {
+    transition: 0.4s ease;
 }
 
 .navbar {
@@ -171,7 +174,7 @@ nav img {
 .anime-parent {
     background-color: #FE330A;
     position: absolute;
-    width: 45vw;
+    width: 42vw;
     height: 34vw;
     top: 75vh;
     right: 0;
@@ -223,17 +226,28 @@ nav img {
     filter: blur(15px);
 }
 
+.second-page {
+    background-color: #EFEAE3;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
 
+.moving-text-div {
+    background-color: #FF611C;
+}
 
 @keyframes anime2 {
-    from {
-        transform: translateY(-35%);
-    }
-
     to {
         transform: translateY(5%);
     }
+
+    from {
+        transform: translateY(-35%);
+    }
 }
+
+
 
 /* media-query for large screen */
 
@@ -250,6 +264,24 @@ nav img {
 
     .content-div h4 {
         font-size: 21px;
+    }
+
+    .anime-parent {
+        background-color: #FE330A;
+        position: absolute;
+        width: 50vw;
+        height: 45vw;
+        top: 64vh;
+    }
+
+    .anime-child-1 {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .anime-child-2 {
+        width: 40vw;
+        height: 40vw;
     }
 }
 
@@ -327,6 +359,24 @@ nav img {
 
     .content-div h1 {
         font-size: 6.3em;
+    }
+
+    .anime-parent {
+        background-color: #FE330A;
+        position: absolute;
+        width: 53vw;
+        height: 45vw;
+        top: 75vh;
+    }
+
+    .anime-child-1 {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .anime-child-2 {
+        width: 40vw;
+        height: 40vw;
     }
 
 }
@@ -425,6 +475,23 @@ nav img {
         object-fit: cover;
     }
 
+    .anime-parent {
+        background-color: #FE330A;
+        position: absolute;
+        width: 80vw;
+        height: 60vw;
+        top: 70vh;
+    }
+
+    .anime-child-1 {
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .anime-child-2 {
+        width: 55vw;
+        height: 58vw;
+    }
 
 }
 

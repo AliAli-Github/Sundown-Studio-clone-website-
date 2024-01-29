@@ -226,17 +226,6 @@ nav img {
     filter: blur(15px);
 }
 
-.second-page {
-    background-color: #EFEAE3;
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-}
-
-.moving-text-div {
-    background-color: #FF611C;
-}
-
 @keyframes anime2 {
     to {
         transform: translateY(5%);
@@ -247,7 +236,57 @@ nav img {
     }
 }
 
+.second-page {
+    background-color: #EFEAE3;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
 
+.moving-text-div {
+    padding: 120px 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text-div::-webkit-scrollbar {
+    display: none;
+}
+
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: moving;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moving-text h1 {
+    display: inline-block;
+    font-size: 8.75vw;
+}
+
+.moving-circle {
+    display: inline-block;
+    width: 3.75em;
+    height: 3.75em;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
+    margin-bottom: 1.6vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 /* media-query for large screen */
 
@@ -283,6 +322,19 @@ nav img {
         width: 40vw;
         height: 40vw;
     }
+
+    .moving-text h1 {
+        font-size: 84px;
+    }
+
+    .moving-circle {
+        margin-bottom: 6px;
+        width: 3em;
+        height: 3em;
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+    }
+
 }
 
 /* media-query for medium screen */
@@ -377,6 +429,24 @@ nav img {
     .anime-child-2 {
         width: 40vw;
         height: 40vw;
+    }
+
+    .moving-text-div {
+        padding: 50px 0px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .moving-text h1 {
+        font-size: 56px;
+    }
+
+    .moving-circle {
+        margin-bottom: 6px;
+        width: 2em;
+        height: 2em;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
     }
 
 }
@@ -480,7 +550,7 @@ nav img {
         position: absolute;
         width: 80vw;
         height: 60vw;
-        top: 70vh;
+        top: 82vh;
     }
 
     .anime-child-1 {
@@ -493,8 +563,21 @@ nav img {
         height: 58vw;
     }
 
+    .moving-text-div {
+        padding: 35px 0px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .moving-text h1 {
+        font-size: 52.5px;
+    }
+
+    .moving-circle {
+        margin-bottom: 5px;
+        width: 2em;
+        height: 2em;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+    }
 }
-
-/* media query for xsmall screen */
-
-@media (max-width:px) {}

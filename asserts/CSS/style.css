@@ -288,6 +288,81 @@ nav img {
     }
 }
 
+.parent-container {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 180px;
+    padding-left: 5.625em;
+    padding-right: 5.625em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left-text {
+    z-index: 999;
+    position: relative;
+    width: 61.5%;
+}
+
+.left-text h2 {
+    color: #0b0500;
+    font-size: 4.25vw;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.right-card {
+    z-index: 999;
+    position: relative;
+    display: grid;
+    width: 25%;
+    max-width: 18vw;
+    margin-top: 8.75em;
+    grid-row-gap: 3em;
+    grid-column-gap: 3em;
+}
+
+.right-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+.right-card p {
+    text-align: justify;
+    font-family: font-two;
+    line-height: 1.4;
+    font-size: 1vw;
+}
+
+.circle-anime {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    filter: blur(15px);
+    background: linear-gradient(to top right, #FE330A, #ec682b);
+    animation-name: updowncircle;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updowncircle {
+    from {
+        transform: translate(-10%, 10%) skew(0);
+    }
+
+    to {
+        transform: translate(10%, -10%) skew(-12deg);
+    }
+}
+
 /* media-query for large screen */
 
 @media (max-width:991px) {
@@ -298,7 +373,6 @@ nav img {
 
     .content-div h1 {
         font-size: 112px;
-        /* font-size: 8vw; */
     }
 
     .content-div h4 {
@@ -334,6 +408,52 @@ nav img {
         margin-left: 1.25em;
         margin-right: 1.25em;
     }
+
+
+    .parent-container {
+        padding-top: 0vw;
+        padding-bottom: 130px;
+        padding-left: 3em;
+        padding-right: 4.5em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .left-text {
+        width: 61.5%;
+    }
+
+    .left-text h2 {
+        color: #0b0500;
+        font-size: 3em;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .right-card {
+        display: grid;
+        width: 25%;
+        max-width: 18vw;
+        margin-top: 7.25em;
+        grid-row-gap: 2.5em;
+        grid-column-gap: 2.5em;
+    }
+
+    .right-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5em;
+    }
+
+    .right-card p {
+        text-align: justify;
+        font-family: font-two;
+        line-height: 1.4;
+        font-size: 1.5vw;
+    }
+
 
 }
 
@@ -449,6 +569,52 @@ nav img {
         margin-right: 0.75em;
     }
 
+    .parent-container {
+        padding-top: 0vw;
+        padding-bottom: 130px;
+        padding-left: 2em;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .left-text {
+        width: 100%;
+    }
+
+    .left-text h2 {
+        color: #0b0500;
+        font-size: 6vw;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .right-card {
+        display: grid;
+        width: 100%;
+        max-width: 54vw;
+        margin-top: 4em;
+        grid-row-gap: 2.5em;
+        grid-column-gap: 2.5em;
+    }
+
+    .right-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5em;
+    }
+
+    .right-card p {
+        text-align: justify;
+        font-family: font-two;
+        line-height: 1.4;
+        font-size: 2.7vw;
+    }
+
+
 }
 
 /* media query for small screen */
@@ -550,7 +716,7 @@ nav img {
         position: absolute;
         width: 80vw;
         height: 60vw;
-        top: 82vh;
+        top: 78vh;
     }
 
     .anime-child-1 {
@@ -580,4 +746,50 @@ nav img {
         margin-left: 0.75em;
         margin-right: 0.75em;
     }
+
+    .parent-container {
+        padding-top: 0vw;
+        padding-bottom: 110px;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .left-text {
+        width: 100%;
+    }
+
+    .left-text h2 {
+        color: #0b0500;
+        font-size: 1.9em;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    .right-card {
+        display: grid;
+        width: 100%;
+        max-width: 18em;
+        margin-top: 3.75em;
+        grid-row-gap: 2.5em;
+        grid-column-gap: 2.5em;
+    }
+
+    .right-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5em;
+    }
+
+    .right-card p {
+        text-align: justify;
+        font-family: font-two;
+        line-height: 1.4;
+        font-size: 15px;
+    }
+
 }

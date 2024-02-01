@@ -25,34 +25,34 @@ navbtn.addEventListener("click", () => {
 
 });
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.container'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.container'),
+//     smooth: true
+// });
 
-var loader = document.querySelector(".loader");
-var one = document.querySelector(".first-heading");
-var two = document.querySelector(".second-heading");
-var three = document.querySelector(".third-heading");
+// var loader = document.querySelector(".loader");
+// var one = document.querySelector(".first-heading");
+// var two = document.querySelector(".second-heading");
+// var three = document.querySelector(".third-heading");
 
-setTimeout(() => {
-    loader.style.transform = "translateY(-100%)";
-}, 3000);
+// setTimeout(() => {
+//     loader.style.transform = "translateY(-100%)";
+// }, 3000);
 
-setTimeout(() => {
-    one.style.display = "block";
-    two.style.display = "none";
-    three.style.display = "none";
-}, 700);
+// setTimeout(() => {
+//     one.style.display = "block";
+//     two.style.display = "none";
+//     three.style.display = "none";
+// }, 700);
 
-setTimeout(() => {
-    one.style.display = "none";
-    two.style.display = "block";
-    three.style.display = "none";
-}, 1400);
+// setTimeout(() => {
+//     one.style.display = "none";
+//     two.style.display = "block";
+//     three.style.display = "none";
+// }, 1400);
 
-setTimeout(() => {
-    one.style.display = "none";
-    two.style.display = "none";
-    three.style.display = "block";
-}, 2100);
+// setTimeout(() => {
+//     one.style.display = "none";
+//     two.style.display = "none";
+//     three.style.display = "block";
+// }, 2100);

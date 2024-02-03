@@ -481,6 +481,16 @@ nav img {
     display: none;
 }
 
+.four-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFEAE3;
+}
+
+.four-page button {
+    
+}
+
 /* media-query for large screen */
 
 @media (max-width:991px) {

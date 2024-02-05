@@ -77,3 +77,12 @@ wrapper.forEach((details) => {
         box.style.backgroundImage = `url(${img})`;
     });
 });
+
+
+var display_one = document.querySelector(".display-one");
+var display_two = document.querySelector(".display-two");
+var display_three = document.querySelector(".display-three");
+var img = document.querySelector(".big-inner-image");
+var lead = document.querySelector(".paragraph");
+
+console.log(display_one, display_two, display_three, lead,img);

@@ -15,6 +15,17 @@
     font-family: font-one;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
 .loader {
     transition: 0.6s ease;
     z-index: 1999;
@@ -481,111 +492,26 @@ nav img {
     display: none;
 }
 
-.four-page {
-    padding: 0em 2em 2em 2em;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #EFEAE3;
-}
-
-.four-page button {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-family: font-two;
-    font-weight: 500;
-    color: #0b0500;
+.fifth-page {
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 100vw;
-    padding: 0.625em 1em 0.625em 1em;
-    font-size: 1.1em;
-}
-
-.four-page button img {
-    width: 60px;
-    height: 20px;
-    object-fit: cover;
-}
-
-.outer {
-    overflow: hidden;
     width: 100%;
-    height: 55vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0B0500;
-    margin: 10em 0em 2em 0em;
-    border-radius: 1.25em;
+    height: 100vh;
 }
 
-.image-text {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.big-image {
-    overflow: hidden;
-    width: 55%;
-    height: 100%;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-.big-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.headings {
-    position: relative;
-}
-
-.headings h1 {
-    cursor: pointer;
-    margin-left: 20px;
-    font-size: 4.5vw;
-    font-weight: 500;
-    line-height: 1.1;
-    color: #efeae3;
-}
-
-.line {
-    border-radius: 2px;
-    position: absolute;
-    top: 0;
+footer {
+    position: fixed;
+    bottom: 0;
     left: 0;
-    width: 3px;
-    height: 14.8vw;
-    background-color: #504A45;
-    overflow: hidden;
-}
-
-.line>div:nth-child(1) {
-    background-color: #FE330A;
-}
-
-.line>div {
-    border-radius: 2px;
     width: 100%;
-    height: 33.33%;
+    height: 99.8vh;
+    padding: 0em 2em;
+    background-color: #0B0500;
+    z-index: 1;
 }
 
-.text {
-    margin: 60px 24% 0px 24%;
-}
-
-.text p {
-    font-family: font-two;
-    color: #efeae3;
-    font-size: 1.1em;
-    text-align: left;
-    word-spacing: 2px;
+footer div {
+    width: 100%;
+    height: 100%;
 }
 
 /* media-query for large screen */

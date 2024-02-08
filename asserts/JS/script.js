@@ -37,25 +37,25 @@ var three = document.querySelector(".third-heading");
 
 setTimeout(() => {
     loader.style.transform = "translateY(-100%)";
-}, 3000);
+}, 3300);
 
 setTimeout(() => {
     one.style.display = "block";
     two.style.display = "none";
     three.style.display = "none";
-}, 700);
+}, 800);
 
 setTimeout(() => {
     one.style.display = "none";
     two.style.display = "block";
     three.style.display = "none";
-}, 1400);
+}, 1600);
 
 setTimeout(() => {
     one.style.display = "none";
     two.style.display = "none";
     three.style.display = "block";
-}, 2100);
+}, 3200);
 
 var wrapper_container = document.querySelector(".cards-parent-one");
 var box = document.querySelector(".box");
@@ -76,4 +76,10 @@ wrapper.forEach((details) => {
         var img = details.getAttribute("data-image");
         box.style.backgroundImage = `url(${img})`;
     });
+});
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
 });

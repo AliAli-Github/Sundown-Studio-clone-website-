@@ -674,6 +674,50 @@ footer>div {
     animation-iteration-count: infinite;
 }
 
+.fourth-page {
+    background-color: #EFEAE3;
+    width: 100%;
+    height: auto;
+}
+
+.fourth-page h6 {
+    padding-bottom: 5em;
+    display: flex;
+    align-items: flex-end;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: .960rem;
+    letter-spacing: .02em;
+    font-family: font-two;
+    color: #0b0500;
+}
+
+.fourth-page h6>div {
+    margin-right: 0.5em;
+    margin-bottom: 5px;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #fe330a;
+    border-radius: 50%;
+}
+
+.fourth-page-inner {
+    padding-left: 5.625em;
+    padding-right: 5.625em;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    width: 30%;
+}
+
+
+
 @keyframes movingdivthree {
     to {
         transform: rotate(15deg);
@@ -963,6 +1007,37 @@ footer>div {
         font-size: 2.1vw;
     }
 
+    .moving-div-one {
+        transform: rotate(50deg);
+        position: absolute;
+        top: -40%;
+        left: -10%;
+        width: 45vw;
+        height: 80vw;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        background-color: #FE5517;
+    }
+
+
+    .moving-div-two {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 100vw;
+        height: 35vw;
+
+    }
+
+    .moving-div-three {
+        border-bottom-left-radius: 5%;
+        transform: rotate(25deg);
+        position: absolute;
+        right: -16%;
+        top: -6%;
+        width: 80vw;
+        height: 45vw;
+    }
 }
 
 /* media-query for medium screen */
@@ -1293,6 +1368,37 @@ footer>div {
         font-family: font-two;
         font-weight: 100;
         font-size: 3.1vw;
+    }
+
+    .moving-div-one {
+        transform: rotate(50deg);
+        position: absolute;
+        top: -40%;
+        left: -10%;
+        width: 45vw;
+        height: 100vw;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        background-color: #FE5517;
+    }
+
+    .moving-div-two {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 100vw;
+        height: 60vw;
+
+    }
+
+    .moving-div-three {
+        border-bottom-left-radius: 5%;
+        transform: rotate(25deg);
+        position: absolute;
+        right: -16%;
+        top: -4%;
+        width: 90vw;
+        height: 60vw;
     }
 
 }
@@ -1664,5 +1770,36 @@ footer>div {
         font-family: font-two;
         font-weight: 100;
         font-size: 3.4vw;
+    }
+
+    .moving-div-one {
+        transform: rotate(50deg);
+        position: absolute;
+        top: -40%;
+        left: -10%;
+        width: 45vw;
+        height: 100vw;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        background-color: #FE5517;
+    }
+
+    .moving-div-two {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 100vw;
+        height: 50vw;
+
+    }
+
+    .moving-div-three {
+        border-bottom-left-radius: 5%;
+        transform: rotate(25deg);
+        position: absolute;
+        right: -30%;
+        top: -15%;
+        width: 110vw;
+        height: 80vw;
     }
 }

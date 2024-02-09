@@ -474,6 +474,7 @@ nav img {
 }
 
 .box {
+    cursor: pointer;
     width: 24vw;
     height: 30vw;
     background-color: transparent;
@@ -674,6 +675,16 @@ footer>div {
     animation-iteration-count: infinite;
 }
 
+@keyframes movingdivthree {
+    to {
+        transform: rotate(15deg);
+    }
+
+    from {
+        transform: rotate(30deg);
+    }
+}
+
 .fourth-page {
     background-color: #EFEAE3;
     width: 100%;
@@ -707,25 +718,36 @@ footer>div {
 }
 
 .swiper {
+    cursor: pointer;
     width: 100%;
     height: 100%;
+    padding-bottom: 8.75em;
 }
 
 .swiper-slide {
     border-left: 1px solid rgba(0, 0, 0, .2);
+    padding-left: 1.5em;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-row-gap: 1.5em;
 }
 
+.swiper-slide img {
+    width: 10em;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
 
-
-@keyframes movingdivthree {
-    to {
-        transform: rotate(15deg);
-    }
-
-    from {
-        transform: rotate(30deg);
-    }
+.swiper-slide p {
+    max-width: 240px;
+    color: #0b0500;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: font-two;
+    line-height: 1.4;
 }
 
 /* media-query for large screen */
@@ -1038,6 +1060,64 @@ footer>div {
         width: 80vw;
         height: 45vw;
     }
+
+    .fourth-page {
+        background-color: #EFEAE3;
+        width: 100%;
+        height: auto;
+    }
+
+    .fourth-page h6 {
+        padding-bottom: 5em;
+        display: flex;
+        align-items: flex-end;
+        line-height: 1.2;
+        font-weight: 400;
+        font-size: .960rem;
+        letter-spacing: .02em;
+        font-family: font-two;
+        color: #0b0500;
+    }
+
+    .fourth-page h6>div {
+        margin-right: 0.5em;
+        margin-bottom: 5px;
+        width: 0.6em;
+        height: 0.6em;
+        background-color: #fe330a;
+        border-radius: 50%;
+    }
+
+    .fourth-page-inner {
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 6.45em;
+    }
+
+    .swiper-slide {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        padding-left: 1.5em;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-row-gap: 1.5em;
+    }
+
+    .swiper-slide p {
+        max-width: 240px;
+        color: #0b0500;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: font-two;
+        line-height: 1.4;
+    }
+
 }
 
 /* media-query for medium screen */
@@ -1399,6 +1479,63 @@ footer>div {
         top: -4%;
         width: 90vw;
         height: 60vw;
+    }
+
+    .fourth-page {
+        background-color: #EFEAE3;
+        width: 100%;
+        height: auto;
+    }
+
+    .fourth-page h6 {
+        padding-bottom: 5em;
+        display: flex;
+        align-items: flex-end;
+        line-height: 1.2;
+        font-weight: 400;
+        font-size: .75rem;
+        letter-spacing: .02em;
+        font-family: font-two;
+        color: #0b0500;
+    }
+
+    .fourth-page h6>div {
+        margin-right: 0.5em;
+        margin-bottom: 5px;
+        width: 0.6em;
+        height: 0.6em;
+        background-color: #fe330a;
+        border-radius: 50%;
+    }
+
+    .fourth-page-inner {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 6.45em;
+    }
+
+    .swiper-slide {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        padding-left: 1.5em;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-row-gap: 1.5em;
+    }
+
+    .swiper-slide p {
+        max-width: 240px;
+        color: #0b0500;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: font-two;
+        line-height: 1.4;
     }
 
 }
@@ -1801,5 +1938,62 @@ footer>div {
         top: -15%;
         width: 110vw;
         height: 80vw;
+    }
+
+    .fourth-page {
+        background-color: #EFEAE3;
+        width: 100%;
+        height: auto;
+    }
+
+    .fourth-page h6 {
+        padding-bottom: 5em;
+        display: flex;
+        align-items: flex-end;
+        line-height: 1.2;
+        font-weight: 400;
+        font-size: .875rem;
+        letter-spacing: .02em;
+        font-family: font-two;
+        color: #0b0500;
+    }
+
+    .fourth-page h6>div {
+        margin-right: 0.5em;
+        margin-bottom: 5px;
+        width: 0.6em;
+        height: 0.6em;
+        background-color: #fe330a;
+        border-radius: 50%;
+    }
+
+    .fourth-page-inner {
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 5em;
+    }
+
+    .swiper-slide {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        padding-left: 1.5em;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-row-gap: 1.5em;
+    }
+
+    .swiper-slide p {
+        max-width: 240px;
+        color: #0b0500;
+        font-size: 1em;
+        font-weight: 400;
+        font-family: font-two;
+        line-height: 1.4;
     }
 }

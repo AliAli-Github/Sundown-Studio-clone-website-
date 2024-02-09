@@ -37,7 +37,7 @@ var three = document.querySelector(".third-heading");
 
 setTimeout(() => {
     loader.style.transform = "translateY(-100%)";
-}, 3300);
+}, 2500);
 
 setTimeout(() => {
     one.style.display = "block";
@@ -55,7 +55,7 @@ setTimeout(() => {
     one.style.display = "none";
     two.style.display = "none";
     three.style.display = "block";
-}, 3200);
+}, 2200);
 
 var wrapper_container = document.querySelector(".cards-parent-one");
 var box = document.querySelector(".box");
@@ -68,7 +68,6 @@ wrapper_container.addEventListener("mouseleave", () => {
     box.style.display = "none";
 });
 
-
 var wrapper = document.querySelectorAll(".wrapper");
 
 wrapper.forEach((details) => {
@@ -78,8 +77,27 @@ wrapper.forEach((details) => {
     });
 });
 
+box.addEventListener("mouseenter", () => {
+    box.style.display = "block";
+});
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
-    centeredSlides: true,
+    centeredSlides: false,
     spaceBetween: 30,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        }
+    }
 });
+

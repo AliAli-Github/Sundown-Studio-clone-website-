@@ -1,4 +1,4 @@
-var navbar = document.querySelector(".navbar");
+var navbar = document.querySelector(".navbar-two");
 var navbtn = document.querySelector(".menu");
 var flag = 0;
 
@@ -15,7 +15,7 @@ navbtn.addEventListener("click", () => {
     }
     else {
         flag -= 1;
-        navbar.style.transform = "translateY(-130%)";
+        navbar.style.transform = "translateY(-100%)";
         document.querySelector(".logo").style.zIndex = "1";
         document.querySelector(".bar-one").style.transform = "rotate(0deg)";
         document.querySelector(".bar-two").style.transform = "rotate(0deg)";
